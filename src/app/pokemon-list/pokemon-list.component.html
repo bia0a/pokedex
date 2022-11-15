@@ -1,5 +1,8 @@
 <div class="input">
     <h1>Pokédex</h1>
+    <p>Search for Pokémon by name or using the National Pokédex number.</p>
+    <input id="teste" placeholder="Ex: eevee" />
+    <button class="search-btn" onclick="search()">A</button>
     <div class="pokemon-list">
         <app-pokemon-card *ngFor="let pokemon of pokemonService.pokemons; index as i" [pokemon]="pokemon.name"
             [numero]="i + 1"></app-pokemon-card>
